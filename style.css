@@ -1,0 +1,219 @@
+
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:azure;
+    color: black;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: gray;
+    color: rgb(11, 11, 11);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hotel {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('hotel.jpg') no-repeat center center/cover;
+    color: white;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotel h1 {
+    font-size: 50px;
+}
+
+.hotel p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.book-now {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-now:hover {
+    background-color: red;
+}
+
+/* Rooms Section */
+.rooms {
+    padding: 30px 20px;
+    background-color: white;
+}
+
+.rooms h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.room-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.room {
+    width: 250px;
+    background:white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.room h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    
+}
+
+/* Services Section */
+.services {
+    padding: 30px 20px;
+    background-color: white;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    width: 250px;
+    text-align: center;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 30px 20px;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    
+}
+
+.gallery img {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 30px 20px;
+    background-color: rgb(87, 85, 85);
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact input, .contact textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid rgb(248, 241, 241);
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 4);
+    color: rgb(248, 245, 245);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: rgb(39, 39, 184);
+}
+.gallery-grid img:hover{
+    scale: 1.05;
+}
+.room :hover{
+    scale: 1.05;
+}
